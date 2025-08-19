@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+
 export default function HeroSection() {
   return (
     <section className="py-10 px-4">
@@ -13,7 +14,7 @@ export default function HeroSection() {
         <Card className="col-span-2 overflow-hidden rounded-2xl shadow-md">
           <CardContent className="p-0 relative">
             <div className="relative w-full h-[200px] lg:h-[400px]">
-              <img
+              <Image
                 src="/markdownsale.webp"
                 alt="Mid-Summer Sale"
                 className="object-contain bg-gray-100" 
@@ -42,7 +43,7 @@ export default function HeroSection() {
 
       {/* Right Image Section */}
       <div className="relative lg:w-1/2 h-64 lg:h-auto">
-        <img
+        <Image
           src="/markdownsale.webp" // place your image in public/images folder
           alt="Outdoor Rug"
           className="object-cover"
@@ -63,7 +64,7 @@ export default function HeroSection() {
 
       {/* Right Image Section */}
       <div className="relative lg:w-1/2 h-64 lg:h-auto">
-        <img
+        <Image
           src="/markdownsale.webp" // place your image in public/images folder
           alt="Outdoor Rug"
           className="object-cover"

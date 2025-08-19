@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { fetchProducts } from "@/lib/product";
 import { product } from "@/types/data";
 
+
 export default function TwoImagesWithSeparateOverlay() {
   const [products, setProducts] = useState<product[]>([]);
 
@@ -23,7 +24,7 @@ export default function TwoImagesWithSeparateOverlay() {
       {products.slice(0, 2).map((product) => (
         <div key={product.id} className="relative w-1/2 h-full rounded-2xl overflow-hidden">
           {/* Background image */}
-          <img
+          <Image
             src={product.image}
             alt={product.title}
             className="object-cover"

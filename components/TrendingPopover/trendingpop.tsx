@@ -2,6 +2,8 @@
 
 import * as React from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import Image from 'next/image'
+
 
 const categories = [
   {
@@ -64,7 +66,7 @@ export default function TrendingPopover() {
         <div className="flex-1 grid grid-cols-3 gap-10">
           {images.map((img) => (
             <div key={img.title} className="text-center">
-              <img
+              <Image
                 src={img.src}
                 alt={img.title}
                 className="w-full h-80 object-cover rounded-lg shadow-sm"

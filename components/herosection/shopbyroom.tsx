@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { fetchProducts } from "@/lib/product";
 import { product } from "@/types/data";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Image from 'next/image'
+
 
 export default function ShopByRooom() {
   const [products, setProducts] = useState<product[]>([]);
@@ -24,7 +26,7 @@ export default function ShopByRooom() {
           {products.map((product, idx) => (
             <CarouselItem key={idx} className="basis-1/4">
               <div className="text-center w-56 ">
-                <img
+                <Image
                   src={product.image}
                   alt={product.title}
                   className="w-56 h-56 object-cover rounded-full bg-white mx-auto"

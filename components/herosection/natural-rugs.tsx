@@ -65,7 +65,7 @@ export default function NaturalRugs() {
               <CarouselItem key={product.id} className="basis-1/3">
                 <Card className="rounded-full">
                   <CardContent className="flex flex-col items-center p-4">
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.title}
                       width={160}

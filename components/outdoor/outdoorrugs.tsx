@@ -11,6 +11,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { fetchAmazonProducts } from "@/lib/product";
 import { amazon } from "@/types/data";
+import Image from 'next/image'
+
 
 const ITEMS_PER_PAGE = 24; // Show more than 20 products per page
 
@@ -138,7 +140,7 @@ const OutdoorRugs: React.FC = () => {
             key={p.id || `product-${idx}`} // unique key
             className="border rounded-lg p-4 shadow-sm hover:shadow-md transition"
           >
-            <img
+            <Image
               src={p.image}
               alt={p.title}
               className="w-full h-48 object-contain mb-2"

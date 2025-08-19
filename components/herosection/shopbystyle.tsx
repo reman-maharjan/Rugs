@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { fetchProducts } from "@/lib/product";
 import { product } from "@/types/data";
+import Image from 'next/image'
+
 
 export default function ShopByStyle() {
   const [products, setProducts] = useState<product[]>([]);
@@ -30,7 +32,7 @@ export default function ShopByStyle() {
 
                   <div className="w-48 h-48 mx-auto bg-gradient-to-br from-cyan-100 to-cyan-200 rounded-full flex items-center justify-center p-6 group-hover:from-cyan-200 group-hover:to-cyan-300 transition-all duration-300">
                     <div className="relative">
-                      <img
+                      <Image
                         src={product.image}
                         alt={product.title}
                         className="w-32 h-32 object-cover rounded-lg shadow-md transform group-hover:scale-110 transition-transform duration-300"

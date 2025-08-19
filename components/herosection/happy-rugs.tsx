@@ -3,6 +3,8 @@ import React from "react";
 import { useEffect,useState } from "react";
 import { product } from "@/types/data";
 import { fetchProducts } from "@/lib/product";
+import Image from 'next/image'
+
 
 export default function VideoAndImages() {
   const [products, setProducts] = useState<product[]>([]);
@@ -37,7 +39,7 @@ export default function VideoAndImages() {
         <div className="flex gap-8">
           {products.map((product, idx) => (
             <div key={idx} className="text-center w-56">
-              <img
+              <Image
                 src={product.image}
                 alt={product.title}
                 className="w-56 h-56 rounded-xl bg-white mx-auto"

@@ -19,6 +19,8 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import Image from 'next/image'
+
 
 // Pagination config
 const ITEMS_PER_PAGE = 8; // adjust per need
@@ -204,7 +206,7 @@ const NaturalWoolRugs: React.FC = () => {
                 key={product.id}
                 className="border rounded-lg p-4 shadow-sm hover:shadow-md transition"
               >
-                <img
+                <Image
                   src={product.image}
                   alt={product.title}
                   className="w-full h-48 object-contain mb-2"

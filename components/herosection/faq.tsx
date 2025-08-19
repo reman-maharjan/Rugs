@@ -2,7 +2,7 @@ import React from "react";
 
 const actions = [
   {
-    icon: "👤", // Replace with SVG or <img> for real icons
+    icon: "👤", // Replace with SVG or <Image> for real icons
     title: "Hi",
     subtitle: "Sign In",
   },

@@ -35,7 +35,7 @@ export default function OutdoorRugs() {
       {products.length > 0 && (
         <div className="relative w-full h-[500px] overflow-hidden rounded-2xl">
           
-          <img
+          <Image
             src={products[10].image}
             alt={products[10].title}
             className="object-cover"
@@ -63,7 +63,7 @@ export default function OutdoorRugs() {
               <CarouselItem key={product.id} className="basis-1/3">
                 <Card className="rounded-2xl ">
                   <CardContent className="flex flex-col rounded-full items-center p-4">
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.title}
                       width={160}
