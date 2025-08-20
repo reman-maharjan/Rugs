@@ -209,6 +209,8 @@ const PersianOriental: React.FC = () => {
                 <Image
                   src={product.image}
                   alt={product.title}
+                    width={300}
+                  height={192}
                   className="w-full h-48 object-contain mb-2"
                 />
                 <h3 className="text-sm font-medium text-gray-900">

@@ -17,6 +17,7 @@ export default function HeroSection() {
               <Image
                 src="/markdownsale.webp"
                 alt="Mid-Summer Sale"
+                fill
                 className="object-contain bg-gray-100" 
                 
               />
@@ -46,6 +47,7 @@ export default function HeroSection() {
         <Image
           src="/markdownsale.webp" // place your image in public/images folder
           alt="Outdoor Rug"
+          fill
           className="object-cover"
         />
       </div>
@@ -67,6 +69,7 @@ export default function HeroSection() {
         <Image
           src="/markdownsale.webp" // place your image in public/images folder
           alt="Outdoor Rug"
+          fill
           className="object-cover"
         />
       </div>

@@ -27,6 +27,7 @@ export default function TwoImagesWithSeparateOverlay() {
           <Image
             src={product.image}
             alt={product.title}
+            fill
             className="object-cover"
           />
 

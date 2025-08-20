@@ -38,6 +38,7 @@ export default function OutdoorRugs() {
           <Image
             src={products[10].image}
             alt={products[10].title}
+            fill
             className="object-cover"
           />
 

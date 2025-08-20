@@ -69,6 +69,8 @@ export default function TrendingPopover() {
               <Image
                 src={img.src}
                 alt={img.title}
+                  width={300}
+                  height={192}
                 className="w-full h-80 object-cover rounded-lg shadow-sm"
               />
               <p className="mt-2 text-gray-800 font-medium">{img.title}</p>

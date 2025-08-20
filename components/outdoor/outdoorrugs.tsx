@@ -143,6 +143,8 @@ const OutdoorRugs: React.FC = () => {
             <Image
               src={p.image}
               alt={p.title}
+                width={300}
+                  height={192}
               className="w-full h-48 object-contain mb-2"
             />
             <h3 className="text-sm font-medium text-gray-900">{p.title}</h3>

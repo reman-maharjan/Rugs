@@ -29,6 +29,8 @@ export default function PreviouslyViewed() {
                 <Image
                   src={product.image}
                   alt={product.title}
+                                      width={300}
+                  height={192}
                   className="w-56 h-56 object-cover rounded-xl bg-white mx-auto"
                 />
                 <div className="mt-4 font-medium text-base">{product.title}</div>
